@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login/ SignUp</title>
+<link rel="stylesheet" href="loginsignup.css"/>
+<style>
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+p{
+	text-align:center;
+	font-family:Sans-serif;
+	font-size:24pt;
+}
+
+form{
+	text-align:center;
+}
+</style>
+</head>
+
+<body>	
+	<header>
+	<header>
+	<div class="head-options">
+	<ul>
+			<li><a href="Dwp Project.html">Home</a></li>
+			<li><a href="ProductListt.html">All Products</a></li>
+			<li><a href="AboutUs.html">About Us</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="contactuss.html">Contact Us</a></li>
+			<li><a href="Login Page.html">Account</a></li>
+	</ul>
+	</div>
+	<div id="Sidebar">
+		<div class="toggle-btn" onclick="show()">
+		<span></span>
+		<span></span>
+		<span></span>
+		</div>
+		<ul>
+			<li><a href="Dwp Project.html">Home</a></li>
+			<li><a href="ProductListt.html">All Products</a></li>
+			<li><a href="AboutUs.html">About Us</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="contactuss.html">Contact Us</a></li>
+			<li><a href="Login Page.html">Account</a></li>
+			<li><a href="ratingpage.html">Ratings and Reviews</a></li>
+		</ul>
+		<script>
+		function show(){
+		document.getElementById("Sidebar").classList.toggle("active");
+		}
+		</script>
+	</div>
+		<div id="cart">
+			<a href="#"><img src="https://pbs.twimg.com/media/EiWY0gxU0AAt7AJ?format=png&name=large" width="80"></a>
+		</div>
+		<div id="login">
+			<a href="Login Page.html"><img src="https://pbs.twimg.com/media/EiWYw2JUcAIXfod?format=png&name=900x900" width="42"></a>
+		</div>
+	</header>		
+	<div class="background">
+		<img src="https://pbs.twimg.com/media/Eif7rtPUcAE-WQt?format=jpg&name=large" width="50%" height="100%"></img>
+		<div class="box">
+			<p>WELCOME BACK</p>	
+			<p>  SIGN-IN</p>
+			<form>
+			<input type="text" name="user" placeholder="Username" required></br>
+			</br>
+			<input type="password" name="password" placeholder="Password" required></br>
+			</br></br>
+			<input type="submit" name="submit" value="LOGIN"></br></br>
+			<a href="forgottpassword.html"><b>Forgot Password?</a></br>
+			</br>
+			<a href="createeaccount.html">Create New Account?</b></a>	
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
