@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="checkoutpage.css"/>
+    <title>Checkout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        body {
+            padding: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: #f2f2f2;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid lightgrey;
+            border-radius: 3px;
+        }
+
+        input[type=text] {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        label {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .icon-container {
+            margin-bottom: 20px;
+            padding: 7px 0;
+            font-size: 24px;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            width: 100%;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 17px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        a {
+            color: #2196F3;
+        }
+
+        hr {
+            border: 1px solid lightgrey;
+        }
+
+        span.price {
+            float: right;
+            color: grey;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        .billing {
+            flex: 50%;
+            padding: 0 16px;
+        }
+
+        .payment {
+            flex: 50%;
+            padding: 0 16px;
+        }
+    </style>
+</head>
+
+<body>	
+	<header>
+	<div class="head-options">
+	<ul>
+			<li><a href="Dwp Project.html">Home</a></li>
+			<li><a href="ProductListt.html">All Products</a></li>
+			<li><a href="AboutUs.html">About Us</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="contactuss.html">Contact Us</a></li>
+			<li><a href="Login Page.html">Account</a></li>
+	</ul>
+	</div>
+	<div id="Sidebar">
+		<div class="toggle-btn" onclick="show()">
+		<span></span>
+		<span></span>
+		<span></span>
+		</div>
+		<ul>
+			<li><a href="Dwp Project.html">Home</a></li>
+			<li><a href="ProductListt.html">All Products</a></li>
+			<li><a href="AboutUs.html">About Us</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="contactuss.html">Contact Us</a></li>
+			<li><a href="Login Page.html">Account</a></li>
+			<li><a href="ratingpage.html">Ratings and Reviews</a></li>
+		</ul>
+		<script>
+		function show(){
+		document.getElementById("Sidebar").classList.toggle("active");
+		}
+		</script>
+	</div>
+		<div id="cart">
+			<a href="#"><img src="https://pbs.twimg.com/media/EiWY0gxU0AAt7AJ?format=png&name=large" width="80"></a>
+		</div>
+		<div id="login">
+			<a href="Login Page.html"><img src="https://pbs.twimg.com/media/EiWYw2JUcAIXfod?format=png&name=900x900" width="42"></a>
+		</div>
+	</header>		
+	
+    <h2>Checkout Form</h2>
+    <p>Please email me the screenshot(s) of your payment so that I can confirm your purchase.<br>Email : amelyn.saffiya@gmail.com<br>Bank Account Details:<br>Maybank<br>562366654855<br>MIR AMELYN SAFFIYA </p>
+    <div class="">
+        <div class="">
+            <div class="">
+                <div class="container">
+                    <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span>
+                    </h4>
+                    <p><a href="#">Shirt Size-M</a> <span class="price">RM15</span></p>
+                    <p><a href="#">Hoodie Size-M</a> <span class="price">RM35</span></p>
+                    <p><a href="#">Shirt Size-S</a> <span class="price">RM20</span></p>
+                    <p><a href="#">Shirt Size-XS</a> <span class="price">RM15</span></p>
+                    <hr>
+                    <p>Total <span class="price" style="color:black"><b>RM85</b></span></p>
+					<hr>
+                </div>
+            </div>
+            <div class="container">
+                <form action="">
+                    <div class="wrapper">
+                        <div class="billing">
+                            <h3>Shipping Details</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Diana Roberts">
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="email" placeholder="diana@example.com">
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                            <input type="text" id="adr" name="address" placeholder="No. 56, Taman Ceria">
+                            <label for="city"><i class="fa fa-institution"></i> City</label>
+                            <input type="text" id="city" name="city" placeholder="Seremban">
+
+                            <div class="">
+                                <div class="">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" name="state" placeholder="Negeri Sembilan">
+                                </div>
+                                <div class="">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" id="zip" name="zip" placeholder="xxxxx">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                 
+                    <input type="submit" value="Checkout" class="btn">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
