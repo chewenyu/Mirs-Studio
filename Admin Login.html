@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <html lang="en" dir="ltr">
+        <head>
+            <meta charset="utf-8">
+            <title>Admin Login</title>
+            <link rel="stylesheet" href="loginstyle.css">
+        </head>
+
+        <body>
+		<div class="head-options">
+	<ul>
+			<li><a href="Dwp Project.html">Home</a></li>
+			<li><a href="ProductListt.html">All Products</a></li>
+			<li><a href="Admin Login.html">My Account</a></li>
+			<li><a href="process.php">Sales Revenue</a></li>
+			<li><a href="Cusomers.html">Manage Member</a>
+			<li><a href="ManageProduct.php">Manage Product</a>
+			<li><a href="Orders.html">Manage Order</a>
+	</ul>
+	</div>
+	<div id="Sidebar">
+		<div class="toggle-btn" onclick="show()">
+		<span></span>
+		<span></span>
+		<span></span>
+		</div>
+		<ul>
+			<li><a href="Dwp Project.html">Home</a></li>
+			<li><a href="ProductListt.html">All Products</a></li>
+			<li><a href="Admin Login">My Account</a></li>
+			<li><a href="Admin Dashboard">Admin</a></li>
+			<li><a href="#">Sales</a></li>
+			<li><a href="Cusomers.html">Manage Member</a>
+			<li><a href="#">Manage Product</a>
+			<li><a href="Orders.html">Manage Order</a>
+			<li><a href="AboutUs.html">About Us</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="contactuss.html">Contact Us</a></li>
+		</ul>
+		<script>
+		function show(){
+		document.getElementById("Sidebar").classList.toggle("active");
+		}
+		</script>
+	</div>
+            <div class="center">
+                <h1>Login</h1>
+                <form method="post">
+                    <div class="txt_field">
+                        <input type="text" required>
+                        <span></span>
+                        <label>Username</label>
+                    </div>
+                    <div class="txt_field">
+                        <input type="password" required>
+                        <span></span>
+                        <label>Password</label>
+                    </div>
+                    <div class="pass">Forgot Password?</div>
+                    <input type="submit" value="login" href="AdminDashboard.html">
+                    <div class="signup_link">
+                        Not an admin? <a href="Dwp Project.html">Return</a>
+                    </div>
+                </form>
+            </div>
+        </body>
+    </html>
