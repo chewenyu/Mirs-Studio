@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Customers.css"/>
+</head>
+
+<body>	
+	<header>
+	<div class="head-options">
+	<ul>
+			<li><a href="Dwp Project.html">Home</a></li>
+			<li><a href="ProductListt.html">All Products</a></li>
+			<li><a href="Admin Login.html">My Account</a></li>
+			<li><a href="Admin Dashboard.html">Admin</a></li>
+			<li><a href="process.php">Sales Revenue</a></li>
+			<li><a href="Cusomers.html">Manage Member</a>
+			<li><a href="ManageProduct.php">Manage Product</a>
+			<li><a href="Orders.html">Manage Order</a>
+	</ul>
+	</div>
+	<div id="Sidebar">
+		<div class="toggle-btn" onclick="show()">
+		<span></span>
+		<span></span>
+		<span></span>
+		</div>
+		<ul>
+			<li><a href="Dwp Project.html">Home</a></li>
+			<li><a href="ProductListt.html">All Products</a></li>
+			<li><a href="Admin Login.html">My Account</a></li>
+			<li><a href="Admin Dashboard.html">Admin</a></li>
+			<li><a href="process.php">Sales</a></li>
+			<li><a href="Cusomers.html">Manage Member</a>
+			<li><a href="ManageProduct.php">Manage Product</a>
+			<li><a href="Orders.html">Manage Order</a>
+			<li><a href="AboutUs.html">About Us</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="contactuss.html">Contact Us</a></li>
+		</ul>
+		<script>
+		function show(){
+		document.getElementById("Sidebar").classList.toggle("active");
+		}
+		</script>
+	</div>
+		<div id="cart">
+			<a href="Shopping Cart.html"><img src="https://pbs.twimg.com/media/EiWY0gxU0AAt7AJ?format=png&name=large" width="80"></a>
+		</div>
+		<div id="login">
+			<a href="Login Page.html"><img src="https://pbs.twimg.com/media/EiWYw2JUcAIXfod?format=png&name=900x900" width="42"></a>
+		</div>
+	</header>	
+
+	<div class="page-title">
+			<p>M A N A G E </br>M E M B E R S</p>
+		</div></br>
+  
+   <table id="table"  border="1">
+     
+	 <tr text="center" >
+	     <th> Name </th>
+		 <th> Age </th>
+		 <th> Gender </th>
+		 <th> Email </th>
+		 <th> Address </th>
+		 <th> State </th>
+		 <th> Phone number </th>
+		 <th> Payment Status </th>
+		 <th> Edit </th>
+	 </tr>
+	 
+	 <tr>
+	     <td> James Kuok</td>
+		 <td> 16 </td>
+		 <td> Male </td>
+		 <td> JamesKuok05@gmail.com </td>
+		 <td> 2, Jalan Kampung Kayu </td>
+		 <td> Kedah </td>
+		 <td> 013-564-0992 </td>
+		 <td> Completed </td>
+		 <td> &#xf014 </td>
+	 </tr>
+	 
+	 <tr>
+	     <td> Alicia Tasnim</td>
+		 <td> 18 </td>
+		 <td> Female </td>
+		 <td> Aliciatasnim18@gmail.com </td>
+		 <td> 4, Jalan Rezab Buang </td>
+		 <td> Selangor </td>
+		 <td> 017-5678-4343 </td>
+		 <td> Completed </td>
+		 <td> &#xf014 </td>
+	 </tr>
+	 
+	 <tr>
+	     <td> Reuben Singh</td>
+		 <td> 20 </td>
+		 <td> Male </td>
+		 <td> Reubssingh99@gmail.com </td>
+		 <td> 56, Jalan SS21/34 </td>
+		 <td> Selangor </td>
+		 <td> 018-098-3219 </td>
+		 <td> Completed </td>
+		 <td> &#xf014 </td>
+	 </tr>
+	 
+	 <tr>
+	     <td> Alicia Tasnim</td>
+		 <td> 18 </td>
+		 <td> Female </td>
+		 <td> Aliciatasnim18@gmail.com </td>
+		 <td> 4, Jalan Rezab Buang </td>
+		 <td> Selangor </td>
+		 <td> 017-5678-4343 </td>
+		 <td> Completed </td>
+		 <td> &#xf014 </td>
+	 </tr>
+	 
+	 <tr>
+	     <td> Ahmad Ali Bobby</td>
+		 <td> 23 </td>
+		 <td> Male </td>
+		 <td> Melayualibaba@gmail.com </td>
+		 <td> 102, Jalan Jengkiri 3 </td>
+		 <td> Johor </td>
+		 <td> 078-654-6578 </td>
+		 <td> Not Completed </td>
+		 <td> &#xf014 </td>
+	 </tr>
+	 
+	 
+   </table>
+	
+	<div class=btn >
+	
+          <button> Add </button>
+		  <button> Update </button>
+		   <button> View </button>
+   </div>
+   
+   <script>
+      
+	  var index, table = document.getElementById('table');
+	  for(var i=1; i< table.rows.length; i++)
+	  {
+	     table.rows[i].cells[8].onclick = function()
+		 {  
+		   var c = confirm("Do you really want to delete this row?");
+		   if(c === true)
+		   {
+	          index = this.parentElement.rowIndex;
+		      table.deleteRow(index);
+		   }
+		 };
+	  }
+	  
+   </script>
+   
+</body>
+
+</html>
