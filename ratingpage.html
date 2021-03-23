@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="ratingpage.css"/>
+  <title>Reviews and Ratings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .heading {
+      font-size: 25px;
+      margin-right: 25px;
+    }
+
+    .checked {
+      color: orange;
+    }
+
+    .side {
+      float: left;
+      width: 15%;
+      margin-top: 10px;
+    }
+
+    .middle {
+      margin-top: 10px;
+      float: left;
+      width: 70%;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    .bar-container {
+      width: 100%;
+      background-color: #f1f1f1;
+      text-align: center;
+      color: white;
+    }
+
+    .bar-5 {
+      width: 60%;
+      height: 18px;
+      background-color: #4CAF50;
+    }
+
+    .bar-4 {
+      width: 30%;
+      height: 18px;
+      background-color: #2196F3;
+    }
+
+    .bar-3 {
+      width: 10%;
+      height: 18px;
+      background-color: #00bcd4;
+    }
+
+    .bar-2 {
+      width: 4%;
+      height: 18px;
+      background-color: #ff9800;
+    }
+
+    .bar-1 {
+      width: 15%;
+      height: 18px;
+      background-color: #f44336;
+    }
+
+    .review {
+      float: left;
+      padding: 5px;
+      margin: 20px auto;
+    }
+
+    textarea {
+      margin: 10px 10px;
+    }
+
+    .submit {
+      padding: 10px;
+    }
+
+    .container {
+      border: 2px solid #ccc;
+      background-color: #eee;
+      border-radius: 5px;
+      padding: 16px;
+      margin: 16px 0;
+      width: 200%;
+    }
+
+    .container img {
+      float: left;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+
+    .container span {
+      font-size: 20px;
+      margin-right: 15px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<header>
+	<div class="head-options">
+	<ul>
+			<li><a href="Dwp Project.html">Home</a></li>
+			<li><a href="ProductListt.html">All Products</a></li>
+			<li><a href="AboutUs.html">About Us</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="contactuss.html">Contact Us</a></li>
+			<li><a href="Login Page.html">Account</a></li>
+	</ul>
+	</div>
+	<div id="Sidebar">
+		<div class="toggle-btn" onclick="show()">
+		<span></span>
+		<span></span>
+		<span></span>
+		</div>
+		<ul>
+			<li><a href="Dwp Project.html">Home</a></li>
+			<li><a href="ProductListt.html">All Products</a></li>
+			<li><a href="AboutUs.html">About Us</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="contactuss.html">Contact Us</a></li>
+			<li><a href="Login Page.html">Account</a></li>
+			<li><a href="ratingpage.html">Ratings and Reviews</a></li>
+		</ul>
+		<script>
+		function show(){
+		document.getElementById("Sidebar").classList.toggle("active");
+		}
+		</script>
+	</div>
+		<div id="cart">
+			<a href="#"><img src="https://pbs.twimg.com/media/EiWY0gxU0AAt7AJ?format=png&name=large" width="80"></a>
+		</div>
+		<div id="login">
+			<a href="Login Page.html"><img src="https://pbs.twimg.com/media/EiWYw2JUcAIXfod?format=png&name=900x900" width="42"></a>
+		</div>
+	</header>		
+<br><br>
+  <span class="heading">User Reviews and Ratings</span>
+  <p>4.1 average based on 254 reviews.</p>
+  <hr style="border:3px solid #f1f1f1">
+
+  <div class="row">
+    <div class="side">
+      <div>5 stars</div>
+    </div>
+    <div class="middle">
+      <div class="bar-container">
+        <div class="bar-5"></div>
+      </div>
+    </div>
+    <div class="side right">
+      <div>150</div>
+    </div>
+    <div class="side">
+      <div>4 stars</div>
+    </div>
+    <div class="middle">
+      <div class="bar-container">
+        <div class="bar-4"></div>
+      </div>
+    </div>
+    <div class="side right">
+      <div>63</div>
+    </div>
+    <div class="side">
+      <div>3 stars</div>
+    </div>
+    <div class="middle">
+      <div class="bar-container">
+        <div class="bar-3"></div>
+      </div>
+    </div>
+    <div class="side right">
+      <div>15</div>
+    </div>
+    <div class="side">
+      <div>2 stars</div>
+    </div>
+    <div class="middle">
+      <div class="bar-container">
+        <div class="bar-2"></div>
+      </div>
+    </div>
+    <div class="side right">
+      <div>6</div>
+    </div>
+    <div class="side">
+      <div>1 star</div>
+    </div>
+    <div class="middle">
+      <div class="bar-container">
+        <div class="bar-1"></div>
+      </div>
+    </div>
+    <div class="side right">
+      <div>20</div>
+    </div>
+  </div>
+  <div class="review">
+    <span class="heading">Reviews</span>
+    <hr style="border:3px solid #f1f1f1">
+    <div class="container">
+      <img src="https://img.icons8.com/plasticine/2x/user.png" alt="Avatar" style="width:90px">
+      <p><span>Gulzar</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span></p>
+      <p>I love the shirts!!</p>
+      <p>The seller is really friendly and she always responds immediately.</p>
+    </div>
+
+    <div class="container">
+      <img src="https://img.icons8.com/plasticine/2x/user.png" alt="Avatar" style="width:90px">
+      <p><span>Ram</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star "></span></p>
+      <p>I bought some shirts. The seller is friendly. Would love if there were more designs.</p>
+    </div>
+	
+	 <div class="container">
+      <img src="https://img.icons8.com/plasticine/2x/user.png" alt="Avatar" style="width:90px">
+      <p><span>Shi Kuai La</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span></p>
+      <p>Love love love!! Mir is really talented.</p>
+    </div>
+  </div>
+  <div>
+
+</body>
+
+</html>
