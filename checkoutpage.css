@@ -1,0 +1,111 @@
+
+#Sidebar{
+	width:250px;
+	height:100%;
+	background-color:#778899;
+	position:absolute;
+	left:-300px;	
+	top:35px;
+}
+#Sidebar.active{
+	left:0;
+	transition:0.6s ease;
+	
+}
+	
+#Sidebar ul li{
+	font-family:Sans-serif;
+	border:1px;
+	text-align:left;
+	list-style:none;
+	color:black;
+	font-size:15pt;
+	padding:25.5px 1px;
+	margin-left:-40px;
+}
+
+#Sidebar ul li:hover{
+	background-color:#c5ccd3;
+	border-bottom:2pt solid #374049;
+	color:black;
+	transition:0.6s ease;
+}
+
+#Sidebar ul li a{
+	text-decoration:none;
+	color:white;
+	transition:0.6s ease;
+	padding:10px 20px;
+}
+
+#Sidebar ul li a:hover{
+	color:#21262c;
+}
+
+#Sidebar .toggle-btn{
+	position:absolute;
+	top:30px;
+	left:330px;
+}
+
+.toggle-btn span{
+	width:30px;
+	height:4px;
+	background-color:white;
+	display:block;
+	margin-top:4px;
+}
+#cart
+{
+	position:absolute;
+	top:55px;
+	left:1430px;
+	
+}
+#login
+{
+	position:absolute;
+	top:55.5px;
+	left:1360px;
+}
+
+.head-options {
+	margin-top:20px;
+	background-color:#b3b3b3;
+	padding:20px 20px;
+}
+
+.head-options ul{
+	margin-left:25%;
+}
+
+.head-options ul li{
+	display:inline-block;
+	float:none;
+	text-align:center;
+}
+
+.head-options ul li a{
+	font-size:12pt;
+	font-family:Sans-serif;
+	padding:30px 20px;
+	text-decoration:none;
+	list-style-type:none;
+	color:white;
+	transition:0.6s ease;
+}
+
+.head-options ul li a:hover{
+	border-bottom:2pt solid white;
+	background-color:#f0f8ff;
+	color:#696969;
+	font-size:13pt;
+}
+
+.info p{color:#4d5966;}
+
+
+body{
+	background-color:#d9d9d9;
+	
+}
