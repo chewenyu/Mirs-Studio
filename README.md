@@ -7,6 +7,7 @@ Mir Studio is an e-commerce website that aims to allow Mir to showcase her artwo
 ## Screenshots
 ![](screenshots/creatacc.png)
 ![](screenshots/Admin%20Login.png)
+![](screenshots/products.png)
 ![](screenshots/FAQ.png)
 ![](screenshots/Add%20Product.png)
 ![](screenshots/Delete%20Product.png)
