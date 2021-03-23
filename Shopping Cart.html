@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Shopping Cart</title>
+	<meta charset="UTF-8">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+	<link rel="stylesheet" href="Shopping Cart.css"/>
+	
+</head>
+
+<body>	
+
+	<header>
+	
+	<div class="head-options">
+	<ul>
+			<li><a href="Dwp Project.html">Home</a></li>
+			<li><a href="ProductList.html">All Products</a></li>
+			<li><a href="AboutUs.html">About Us</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="contactuss.html">Contact Us</a></li>
+			<li><a href="Login Page.html">Account</a></li>
+	</ul>
+	</div>
+	
+	<div class="page-title">
+			<p>S H O P P I N G</br>C A R T</p>
+	</div>
+		
+	
+	<div id="Sidebar">
+		<div class="toggle-btn" onclick="show()">
+		<span></span>
+		<span></span>
+		<span></span>
+		</div>
+		<ul>
+			<li><a href="Dwp Project.html">Home</a></li>
+			<li><a href="ProductListt.html">All Products</a></li>
+			<li><a href="AboutUs.html">About Us</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="contactuss.html">Contact Us</a></li>
+			<li><a href="Login Page.html">Account</a></li>
+			<li><a href="ratingspage.html">Ratings and Reviews</a></li>
+		</ul>
+		
+		<script>
+		function show(){
+		document.getElementById("Sidebar").classList.toggle("active");
+		}
+		</script>
+		
+	</div>
+	
+		<div id="cart">
+			<a href="Shopping Cart.html"><img src="https://pbs.twimg.com/media/EiWY0gxU0AAt7AJ?format=png&name=large" width="80"></a>
+		</div>
+		<div id="login">
+			<a href="Login Page.html"><img src="https://pbs.twimg.com/media/EiWYw2JUcAIXfod?format=png&name=900x900" width="42"></a>
+		</div>
+	</header>
+	
+	<div>
+		<div class="container">
+			<section> 
+			
+				<article class="product">
+				
+					<header>
+						<a class="remove">
+                        <img src="https://pbs.twimg.com/media/EeAC33hUEAE3z4v?format=jpg&name=small" alt="Hibiscus T-shirt">
+                        <h3>Remove product</h3>
+						</a>
+					</header>
+				
+					<div class="content">
+                    <h1>Hibiscus T-shirt</h1>
+                    Sizes: XS - 5XL
+					</div>
+					
+					<footer class="content">
+						<span class="qty-minus">-</span>
+						<span class="qty">1</span>
+						<span class="qty-plus">+</span>
+						<h2 class="full-price">RM50</h2>
+					</footer>
+				</article>
+			
+				<article class="product">
+					<header>
+						<a class="remove">
+							<img src="https://pbs.twimg.com/media/EeAC4tMUYAAtfKF?format=jpg&name=large" class="image2" alt="Hibiscus Hoodie">
+							<h3>Remove product</h3>
+						</a>
+					</header>
+					
+					<div class="content">
+						<h1>Hibiscus Hoodie</h1>
+						Sizes: S - 2XL
+					</div>
+					
+					<footer class="content">
+						<span class="qty-minus">-</span>
+						<span class="qty">1</span>
+						<span class="qty-plus">+</span>
+						<h2 class="full-price">RM99</h2>
+					</footer>
+				</article>
+			
+				<article class="product">
+					<header>
+						<a class="remove">
+							<img src="https://pbs.twimg.com/media/EeAC1J9UEAIxuz3?format=jpg&name=small" class="image3" alt="KLCC T-shirt">
+							<h3>Remove product</h3>
+						</a>
+						
+					</header>
+					<div class="content">
+						<h1>KLCC T-shirt</h1>
+						Sizes: XS - 5XL
+					</div>
+					<footer class="content"> 
+						<span class="qty-minus">-</span>
+						<span class="qty">1</span>
+						<span class="qty-plus">+</span>
+						<h2 class="full-price">RM50</h2>
+					</footer>
+				</article>
+				
+				<article class="product">
+					<header>
+						<a class="remove">
+							<img src="https://pbs.twimg.com/media/EeAC1xvU4AE0GCv?format=jpg&name=large" alt="KLCC Hoodie">
+							<h3>Remove product</h3>
+						</a>
+						
+					</header>
+					<div class="content">
+						<h1>KLCC Hoodie</h1>
+						Sizes: S - 2XL
+					</div>
+					<footer class="content"> 
+						<span class="qty-minus">-</span>
+						<span class="qty">1</span>
+						<span class="qty-plus">+</span>
+						<h2 class="full-price">RM99</h2>
+					</footer>
+				</article>
+			
+			</section>
+		</div>
+	</div>
+	
+    <footer id="site-footer">
+        <div class="container clearfix">
+            <div class="right">
+                <h1>Total: <span>RM298</span></h1>
+                <a class="checkout-btn" href="#"><span type="submit">Checkout</span></a>
+            </div>
+        </div>
+	</footer>	
+	
+</body>
+
+</html>
